@@ -45,8 +45,8 @@ plutil -key "Eraser Quantity_validTimeSpanInHours" -value "AkpL9N2cOohzKdUPUIquC
 ```
 
 See: 
-	* <a href="screenshots/IMG_0708.PNG> Screenshot of new amounts</a>
-
+	* <a href="screenshots/IMG_0708.PNG"> Screenshot of new amounts</a>
+	* 
 ---
 	<key>Lives Remaining</key>
 	<string>kPqwOrU9eEvvjXeaAT1sKw==</string>
@@ -90,8 +90,8 @@ XT5i8DV9WmCdvklOopzTmmT9PaJ2cOlBOJoyjj6rxCJ6un9Ak/eSlWPZ2kgDG6kophqaQwqaHwiOY7W+
 This is a fairly large value, so I used scp to copy a text file of the value to my device and then used plutil to change it. Worked like a charm! 
 
 See: 
-	* <a href="screenshots/IMG_0706.PNG> Screenshot of all levels unlocked</a>
-	* <a href="screenshots/IMG_0707.PNG> Screenshot of 1,000,000 points</a>
+	* <a href="screenshots/IMG_0706.PNG"> Screenshot of all levels unlocked</a>
+	* <a href="screenshots/IMG_0707.PNG"> Screenshot of 1,000,000 points</a>
 
 ####Developers: 
 
