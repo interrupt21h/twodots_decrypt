@@ -2,7 +2,9 @@
 
 "Two Dots" for iOS is a Unity-based game. This can be determined through examining with otool, IDA, etc. Unity games typically use an easily decompiled .NET Assembly for the application data, but on iOS this is converted to native code. The iOS package does not contain the original .NET file. However, the original file can be found as Assembly-CSharp.dll in the Android package at assets/bin/Data/Managed. For the Android app, this can be edited, repackaged and used for complete control of the game. It can also be useful as a guide when locating functions within the compiled code in the iOS binary... 
 
-Using dnSpy, it was possible to find the function they use to encrypt and decrypt stored game values (SimpleAES.cs). This was converted to Python and used to pwn all levels, etc via the game plist file....
+Using dnSpy, it was possible to find the function they use to encrypt and decrypt stored game values (<a href="SimpleAES.cs">SimpleAES.cs</a>). This was converted to Python and used to pwn all levels, etc via the game plist file:
+* <a href="2dots_decrypt.py">2dots_decrypt.py</a>
+* <a href="2dots_encrypt.py">2dots_encrypt.py</a>
 
 
 
