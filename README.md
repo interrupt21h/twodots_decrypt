@@ -1,5 +1,6 @@
-Background:
-"Two Dots" for iOS is a Unity-based game. This can be determined through examining with otool, IDA, etc. Unity games typically use an easily decompiled .NET Assembly for the application data, but on iOS this is converted to native code. The iOS package does not contain the original .NET file. However, the original file can be found as Assembly-CSharp.dll in the Android package at assets/bin/Data/Managed. For the Android app, this can be edited and used for complete control of the game. It can also be used as a guide when locating functions within the compiled code in the iOS binary... 
+####Background:
+
+"Two Dots" for iOS is a Unity-based game. This can be determined through examining with otool, IDA, etc. Unity games typically use an easily decompiled .NET Assembly for the application data, but on iOS this is converted to native code. The iOS package does not contain the original .NET file. However, the original file can be found as Assembly-CSharp.dll in the Android package at assets/bin/Data/Managed. For the Android app, this can be edited, repackaged and used for complete control of the game. It can also be useful as a guide when locating functions within the compiled code in the iOS binary... 
 
 Using dnSpy, it was possible to find the function they use to encrypt and decrypt stored game values (SimpleAES.cs). This was converted to Python and used to pwn all levels, etc via the game plist file....
 
@@ -83,7 +84,12 @@ So, it looks like level, star, and score data...the top level is 460. Let's get 
 XT5i8DV9WmCdvklOopzTmmT9PaJ2cOlBOJoyjj6rxCJ6un9Ak/eSlWPZ2kgDG6kophqaQwqaHwiOY7W+Ko0JyH9xXQMCYAkDkdjBDbexk8qTZMgvox7vZRExoEiE7ig/gTvzlMqo8t0JWPsAATuBOVtEYmcb8CfK+Ekty7qOTMonse7MQwfHkoTD9I0qj/WfdoMUDrKyTsNJOQMIr4CJApiSNsyOPP3KRPhttPDO1dgGhgWZqgEJgmwCPelXwTQXzeVhzeW ...
 ```
 
-I used scp to copy the value to my device and then used plutil to change it. Worked like a charm! See screenshots.
+This is a fairly large value, so I used scp to copy a text file of the value to my device and then used plutil to change it. Worked like a charm! See screenshots. 
+
+####Developers: 
+
+Know that any keys, passwords, etc that are compiled into your software are easily discovered through basic reverse engineering.
+
 
 
 
