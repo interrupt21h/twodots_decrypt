@@ -99,6 +99,21 @@ See:
 * <a href="screenshots/IMG_0706.PNG"> Screenshot of all levels unlocked</a>
 * <a href="screenshots/IMG_0707.PNG"> Screenshot of 1,000,000 points</a>
 
+####Update - C# Version:
+Using Mono to run existing SimpleAES.cs:
+
+See:
+* <a href="SimpleAES_encrypt.cs">SimpleAES_encrypt.cs</a>
+* <a href="SimpleAES_decrypt.cs">SimpleAES_decrypt.cs</a>
+
+Example:
+```
+echo "nSquSSl4Zqndiih+kRqmwPCcL2JoKuH13+VsNJlX2UQ=" | mono SimpleAES_decrypt.exe | mono SimpleAES_encrypt.exe
+nSquSSl4Zqndiih+kRqmwPCcL2JoKuH13+VsNJlX2UQ=
+```
+
+
+
 ####Developers: 
 
 Know that any keys, passwords, etc that are compiled into your software are easily discovered through basic reverse engineering.
