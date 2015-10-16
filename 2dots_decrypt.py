@@ -1,5 +1,4 @@
 import pyaes
-import base64
 import sys
 
 key = str(bytearray([12,128,45,11,24,26,14,6,12,184,4,162,37,112,18,209]))
