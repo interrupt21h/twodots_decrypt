@@ -1,6 +1,6 @@
-Example:
+####Example:
 
-#### On iPad:
+*(On iPad)*
 ```
 find /var/mobile/Containers/Data/Application -name "com.weplaydots.twodots.plist"
 /var/mobile/Containers/Data/Application/5DADF5E8-EFD9-4EEA-B317-119BE0DD62BF/Library/Preferences/com.weplaydots.twodots.plist
@@ -26,7 +26,7 @@ AkpL9N2cOohzKdUPUIquCQ==
 
 ```
 
-#### On iPad
+*(On iPad)*
 ```
 plutil -key "Eraser Quantity" -value "AkpL9N2cOohzKdUPUIquCQ==" com.weplaydots.twodots.plist
 plutil -key "Eraser Quantity_validTimeSpanInHours" -value "AkpL9N2cOohzKdUPUIquCQ==" com.weplaydots.twodots.plist
