@@ -20,6 +20,8 @@ Use plutil.pl on Linux or plutil on iOS to dump to text ..
 	<key>Eraser Quantity_validTimeSpanInHours</key>
 	<string>kPqwOrU9eEvvjXeaAT1sKw==</string>
 
+Decrypt...
+
 ```
 echo "kPqwOrU9eEvvjXeaAT1sKw==" | base64 -d | python ./2dots_decrypt.py 
 0
@@ -27,10 +29,12 @@ echo "kPqwOrU9eEvvjXeaAT1sKw==" | base64 -d | python ./2dots_decrypt.py
 
 echo "yFjAWJAL7C0y9F4OXnJyOA==" | base64 -d | python ./2dots_decrypt.py 
 2
+```
+Let's make that 100000 :)
 
+```
 echo -n "100000" | python ./2dots_encrypt.py 
 AkpL9N2cOohzKdUPUIquCQ==
-
 ```
 
 *(On iPad)*
