@@ -44,6 +44,9 @@ plutil -key "Eraser Quantity" -value "AkpL9N2cOohzKdUPUIquCQ==" com.weplaydots.t
 plutil -key "Eraser Quantity_validTimeSpanInHours" -value "AkpL9N2cOohzKdUPUIquCQ==" com.weplaydots.twodots.plist
 ```
 
+See: 
+	* <a href="screenshots/IMG_0708.PNG> Screenshot of new amounts</a>
+
 ---
 	<key>Lives Remaining</key>
 	<string>kPqwOrU9eEvvjXeaAT1sKw==</string>
@@ -76,7 +79,7 @@ echo "RqH0FRcwD5BUHYKS3t7TAGb4UqASnXzFT2xrNVWaooChdemdKgnDjbqtX0jNaj5uOqQxUEnX4d
 {"1":{"score":82, "stars":1}, "2":{"score":150, "stars":2}, "3":{"score":289, "stars":3}, "4":{"score":328, "stars":3}, "5":{"score":280, "stars":3}, "6":{"score":326, "stars":3}, "7":{"score":472, "stars":3}, "8":{"score":181, "stars":3}, "9":{"score":444, "stars":3}, "10":{"score":239, "stars":2}, "11":{"score":269, "stars":3}, "12":{"score":174, "stars":3}, "13":{"score":230, "stars":3}, "14":{"score":320, "stars":3}, "15":{"score":228, "stars":3}, "16":{"score":234, "stars":3}, "17":{"score":435, "stars":3}, "18":{"score":299, "stars":3}, "19":{"score":445, "stars":3}, "20":{"score":418, "stars":3}, "21":{"score":651, "stars":3}, "22":{"score":107, "stars":3}}
 
 ```
-So, it looks like level, star, and score data...the top level is 460. Let's get 100000 points for all the levels :)
+So, it looks like level, star, and score data...the top level is 460. Let's get 1,000,000 points for all the levels :)
 
 ```
  ( echo -n -e "{\"1\":{\"score\":1000000, \"stars\":3},"; for x in `seq 2 459`; do echo -n -e " \"$x\"{:\"score\":1000000, \"stars\":3},";done; echo -e "\"460\":{\"score\":1000000, \"stars\":3}}" ) | python 2dots_encrypt.py
@@ -84,7 +87,11 @@ So, it looks like level, star, and score data...the top level is 460. Let's get 
 XT5i8DV9WmCdvklOopzTmmT9PaJ2cOlBOJoyjj6rxCJ6un9Ak/eSlWPZ2kgDG6kophqaQwqaHwiOY7W+Ko0JyH9xXQMCYAkDkdjBDbexk8qTZMgvox7vZRExoEiE7ig/gTvzlMqo8t0JWPsAATuBOVtEYmcb8CfK+Ekty7qOTMonse7MQwfHkoTD9I0qj/WfdoMUDrKyTsNJOQMIr4CJApiSNsyOPP3KRPhttPDO1dgGhgWZqgEJgmwCPelXwTQXzeVhzeW ...
 ```
 
-This is a fairly large value, so I used scp to copy a text file of the value to my device and then used plutil to change it. Worked like a charm! See screenshots. 
+This is a fairly large value, so I used scp to copy a text file of the value to my device and then used plutil to change it. Worked like a charm! 
+
+See: 
+	* <a href="screenshots/IMG_0706.PNG> Screenshot of all levels unlocked</a>
+	* <a href="screenshots/IMG_0707.PNG> Screenshot of 1,000,000 points</a>
 
 ####Developers: 
 
