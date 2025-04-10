@@ -1,4 +1,4 @@
-####Background:
+#### Background:
 
 "Two Dots" for iOS is a Unity-based game. This can be determined through examining with otool, IDA, etc. Unity games typically use an easily decompiled .NET Assembly for the application data, but on iOS this is converted to native code. 
 
@@ -12,7 +12,7 @@ Using <a href="https://github.com/0xd4d/dnSpy">dnSpy</a>, it was possible to fin
 
 
 
-####Example:
+#### Example:
 
 *(On iPad)*
 ```
@@ -99,7 +99,7 @@ See:
 * <a href="screenshots/IMG_0706.PNG"> Screenshot of all levels unlocked</a>
 * <a href="screenshots/IMG_0707.PNG"> Screenshot of 1,000,000 points</a>
 
-####Update - C# Version:
+#### Update - C# Version:
 Using Mono to run existing SimpleAES.cs:
 
 See:
@@ -114,7 +114,7 @@ nSquSSl4Zqndiih+kRqmwPCcL2JoKuH13+VsNJlX2UQ=
 
 
 
-####Developers: 
+#### Developers: 
 
 Know that any keys, passwords, etc that are compiled into your software are easily discovered through basic reverse engineering.
 
